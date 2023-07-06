@@ -1,19 +1,20 @@
+import { Link } from 'react-router-dom';
+import mic from '../assets/microphone-solid.svg';
+import settings from '../assets/gear-solid.svg';
+import back from '../assets/chevron-left-solid.svg';
+
 function Navbar() {
   return (
     <>
       <nav>
-        <p>
-          Back
-        </p>
+        <Link to="/">
+          <img className="icon" src={back} alt="back" />
+        </Link>
         <p>
           Countries
         </p>
-        <p>
-          Mic Icon
-        </p>
-        <p>
-          Settings
-        </p>
+        <img className="icon" src={mic} alt="audio" />
+        <img className="icon" src={settings} alt="settings" />
       </nav>
     </>
   );

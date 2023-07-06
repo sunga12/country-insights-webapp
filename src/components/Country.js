@@ -5,9 +5,9 @@ function Country({
 }) {
   return (
     <>
-      <div key={cca3}>
-        <p>
-          {name}
+      <div className="box-text" key={cca3}>
+        <p className="country-name">
+          {name.toUpperCase()}
         </p>
         <p>
           Population:

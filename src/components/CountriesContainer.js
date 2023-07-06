@@ -15,7 +15,7 @@ function CountriesContainer() {
   }, [dispatch]);
 
   const filteredList = countriesArray
-    .filter((country) => country.name.common.includes(searchField));
+    .filter((country) => country.region.includes(searchField));
 
   if (isLoading) {
     return (
@@ -27,12 +27,13 @@ function CountriesContainer() {
 
   return (
     <>
-      <FilterCountries />
-      <div>
-        Stats by Country
+      <div className="top">
+        <FilterCountries />
       </div>
-
-      <ul className="countries-list">
+      <div className="stats-by-country">
+        STATS BY COUNTRY:
+      </div>
+      <div className="countries-list">
         {filteredList.map((country) => (
           <div className="country" key={country.cca3}>
             <Link to={`/${country.cca3}`}>
@@ -46,7 +47,7 @@ function CountriesContainer() {
             </Link>
           </div>
         ))}
-      </ul>
+      </div>
     </>
   );
 }

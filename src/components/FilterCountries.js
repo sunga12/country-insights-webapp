@@ -10,15 +10,15 @@ function FilterCountries() {
   }
 
   return (
-    <div>
+    <div className="search">
       <input
+        className="search-box"
         type="text"
         value={searchField}
         onChange={(e) => HandleFilter(e)}
-        placeholder="Search By Country"
+        placeholder="Search By Region ie. Africa, Asia, Oceana, America, Europe"
       />
-      {' '}
-      <span>Note: Case Sensitive</span>
+      <p className="note">Note: Case Sensitive</p>
     </div>
   );
 }
