@@ -6,6 +6,7 @@ const initialState = {
   countryDetails: [],
   isLoading: true,
   error: '',
+  searchField: '',
 };
 
 const url = 'https://restcountries.com/v3.1/all';
@@ -38,7 +39,11 @@ export const getCountryDetails = createAsyncThunk(
 const countriesSlice = createSlice({
   name: 'countries',
   initialState,
-  reducers: {},
+  reducers: {
+    searchCountry: (state, action) => {
+      state.searchField = action.payload;
+    },
+  },
   extraReducers: {
     [getCountriesData.pending]: (state) => {
       state.isLoading = true;
@@ -65,4 +70,5 @@ const countriesSlice = createSlice({
   },
 });
 
+export const { searchCountry } = countriesSlice.actions;
 export default countriesSlice.reducer;

@@ -5,18 +5,13 @@ import { useParams } from 'react-router-dom';
 import { getCountryDetails } from '../redux/countries/countriesSlice';
 
 function CountryPage() {
-  // cca3, name, population, capital, region, subRegion, area, lat, lon,
   const { cca3 } = useParams();
   const { countryDetails, isLoading } = useSelector((state) => state.countries);
   const dispatch = useDispatch();
 
-  console.log(cca3);
-
   useEffect(() => {
     dispatch(getCountryDetails(cca3));
   }, [dispatch, cca3]);
-
-  // console.log(cca3);
 
   if (isLoading) {
     return (

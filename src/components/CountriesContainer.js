@@ -3,15 +3,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getCountriesData } from '../redux/countries/countriesSlice';
 import Country from './Country';
+import FilterCountries from './FilterCountries';
 
 function CountriesContainer() {
-  const { countriesArray, isLoading } = useSelector((state) => state.countries);
+  const { countriesArray, isLoading, searchField } = useSelector((state) => state.countries);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCountriesData());
   }, [dispatch]);
+
+  const filteredList = countriesArray
+    .filter((country) => country.name.common.includes(searchField));
 
   if (isLoading) {
     return (
@@ -23,12 +27,13 @@ function CountriesContainer() {
 
   return (
     <>
+      <FilterCountries />
       <div>
         Stats by Country
       </div>
 
       <ul className="countries-list">
-        {countriesArray.map((country) => (
+        {filteredList.map((country) => (
           <div className="country" key={country.cca3}>
             <Link to={`/${country.cca3}`}>
               <img className="flag" src={country.flags.png} alt="flag" />
