@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getCountriesData } from '../redux/countries/countriesSlice';
 import Country from './Country';
-// import CountryPage from './CountryPage';
 
 function CountriesContainer() {
   const { countriesArray, isLoading } = useSelector((state) => state.countries);
@@ -30,7 +29,7 @@ function CountriesContainer() {
 
       <ul className="countries-list">
         {countriesArray.map((country) => (
-          <li className="country" key={country.cca3}>
+          <div className="country" key={country.cca3}>
             <Link to={`/${country.cca3}`}>
               <img className="flag" src={country.flags.png} alt="flag" />
               <Country
@@ -40,7 +39,7 @@ function CountriesContainer() {
                 population={country.population}
               />
             </Link>
-          </li>
+          </div>
         ))}
       </ul>
     </>

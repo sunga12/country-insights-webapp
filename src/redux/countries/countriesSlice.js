@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const initialState = {
   countriesArray: [],
-  countryDetails: {},
+  countryDetails: [],
   isLoading: true,
   error: '',
 };

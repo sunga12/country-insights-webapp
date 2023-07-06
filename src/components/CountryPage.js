@@ -16,7 +16,7 @@ function CountryPage() {
     dispatch(getCountryDetails(cca3));
   }, [dispatch, cca3]);
 
-  console.log(countryDetails);
+  // console.log(cca3);
 
   if (isLoading) {
     return (
