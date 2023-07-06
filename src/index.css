@@ -25,3 +25,30 @@ code {
     'Courier New',
     monospace;
 }
+
+ul {
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+}
+
+.countries-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.country {
+  border: 2px solid salmon;
+  background-color: rgb(220, 20, 157);
+  color: #fff;
+  padding: 0.2rem;
+}
+
+.flag {
+  width: 40%;
+  float: right;
+}
