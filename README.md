@@ -3,10 +3,11 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Country-Insights\] ](#-country-insights-)
+- [📖 Country-Insights ](#-country-insights-)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Video Presentation ](#-video-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -25,13 +26,12 @@
 
 # 📖 Country-Insights <a name="about-project"></a>
 
-**Country-Insights** is a basic webapp that Displays Countries and their various details, Allows users to Navigate between teh home page and detais page, depending on the country of their choice.
+**Country-Insights** is a basic webapp that Displays Countries and their various details, Allows users to Navigate between the home page and details page, depending on the country of their choice.
 
 ## 🛠 Built With <a name="built-with"></a>
 - **HTML**
 - **CSS**
 - **React & Redux Toolkit**
-
 
 <!-- Features -->
 
@@ -50,6 +50,13 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
   [Check it Out! 🎉](https://country-insights-webapp.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
+
+
+## 🚀 Video Presentation <a name="live-demo"></a>
+
+  [Learn About it! 🎉](https://drive.google.com/file/d/1OLRA5fCWAc3ozY2KLf64zFKZgTvOXXUi/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 

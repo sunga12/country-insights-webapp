@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 import { getCountryDetails } from '../redux/countries/countriesSlice';
 
 function CountryPage() {
