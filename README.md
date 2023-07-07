@@ -23,25 +23,25 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Country-Insights] <a name="about-project"></a>
+# 📖 Country-Insights <a name="about-project"></a>
 
-**[Country-Insights]** is a basic webapp that Displays Countries and their various details, Allows users to Navigate between teh home page and detais page, depending on the country of their choice.
+**Country-Insights** is a basic webapp that Displays Countries and their various details, Allows users to Navigate between teh home page and detais page, depending on the country of their choice.
 
 ## 🛠 Built With <a name="built-with"></a>
-- **[HTML]**
-- **[CSS]**
-- **[React & Redux Toolkit]**
+- **HTML**
+- **CSS**
+- **React & Redux Toolkit**
 
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[useDispatch to dispatch an action to the store]**
-- **[useSelector to select and retrieve data from the Redux store]**
-- **[Filter Countries based on Region]**
-- **[Displays All the Countries of the world with their Population]**
-- **[Displays Detailed country info after clicking on any country]**
+- **useDispatch to dispatch an action to the store**
+- **useSelector to select and retrieve data from the Redux store**
+- **Filter Countries based on Region**
+- **Displays All the Countries of the world with their Population**
+- **Displays Detailed country info after clicking on any country**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [Check it Out! 🎉](https://country-insights-webapp.onrender.com/)
+  [Check it Out! 🎉](https://country-insights-webapp.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
@@ -128,7 +128,7 @@ npx eslint .
 
 Deployed this project using:
 
-- Render.com
+- [Render.com](https://render.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
