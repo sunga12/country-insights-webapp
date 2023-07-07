@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+// import axios from 'axios';
 
 const initialState = {
   countriesArray: [],
@@ -15,8 +15,9 @@ export const getCountriesData = createAsyncThunk(
   'countries/getCountriesData',
   async (thunkAPI) => {
     try {
-      const response = await axios(url);
-      return response.data;
+      const response = await fetch(url);
+      const data = response.json();
+      return data;
     } catch (error) {
       return thunkAPI.rejectWithValue('something went wrong');
     }
@@ -28,8 +29,9 @@ export const getCountryDetails = createAsyncThunk(
   async (cca3, thunkAPI) => {
     const countryUrl = `https://restcountries.com/v3.1/alpha/${cca3}`;
     try {
-      const response = await axios(countryUrl);
-      return response.data;
+      const response = await fetch(countryUrl);
+      const data = response.json();
+      return data;
     } catch (error) {
       return thunkAPI.rejectWithValue('something went wrong');
     }

@@ -102,28 +102,4 @@ function CountryPage() {
   );
 }
 
-CountryPage.defaultProps = {
-//   name: '',
-//   population: 0,
-  // cca3: '',
-//   capital: '',
-//   region: '',
-//   subRegion: '',
-//   area: 0,
-//   lat: 0,
-//   lon: 0,
-};
-
-CountryPage.propTypes = {
-//   name: PropTypes.string,
-//   population: PropTypes.number,
-  // cca3: PropTypes.string,
-//   capital: PropTypes.string,
-//   region: PropTypes.string,
-//   subRegion: PropTypes.string,
-//   area: PropTypes.number,
-//   lat: PropTypes.number,
-//   lon: PropTypes.number,
-};
-
 export default CountryPage;
