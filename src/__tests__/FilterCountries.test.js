@@ -6,9 +6,9 @@ import Store from '../redux/store';
 
 it('Filter Countries component test', () => {
   const tree = render(
-        <Provider store={Store}>
-          <FilterCountries />
-        </Provider>
-    )
+    <Provider store={Store}>
+      <FilterCountries />
+    </Provider>,
+  );
   expect(tree).toMatchSnapshot();
 });

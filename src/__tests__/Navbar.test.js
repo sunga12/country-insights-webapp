@@ -8,11 +8,11 @@ import Navbar from '../components/Navbar';
 it('Navbar component test', () => {
   const tree = renderer.create(
     <MemoryRouter>
-    <Provider store={Store}>
-      <Navbar />
-    </Provider>
-  </MemoryRouter>,
-    )
+      <Provider store={Store}>
+        <Navbar />
+      </Provider>
+    </MemoryRouter>,
+  )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
