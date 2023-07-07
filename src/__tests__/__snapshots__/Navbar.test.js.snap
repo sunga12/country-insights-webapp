@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component test 1`] = `
+<nav>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="back"
+      className="icon"
+      src="chevron-left-solid.svg"
+    />
+  </a>
+  <p>
+    Countries
+  </p>
+  <img
+    alt="audio"
+    className="icon"
+    src="microphone-solid.svg"
+  />
+  <img
+    alt="settings"
+    className="icon"
+    src="gear-solid.svg"
+  />
+</nav>
+`;
