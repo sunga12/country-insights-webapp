@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: rgb(72, 106, 165);
+  color: #fff;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(72, 106, 165);
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.countries-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+}
+
+.countries-list div:nth-child(4n+1) {
+  background-color: rgb(72, 106, 165);
+}
+
+.countries-list div:nth-child(4n) {
+  background-color: rgb(72, 106, 165);
+}
+
+.country {
+  background-color: rgb(55, 98, 165);
+  color: #fff;
+}
+
+.flag {
+  width: 50%;
+  margin: 0.5rem;
+}
+
+.box-text > p {
+  text-align: end;
+  margin: 0.5rem;
+}
+
+.top {
+  background-color: rgb(86, 142, 232);
+  height: 10rem;
+  padding: 0 0.5rem;
+}
+
+.stats-by-country {
+  background-color: rgb(36, 81, 153);
+  padding: 0.2rem 0 0.2rem 0.4rem;
+  font-weight: 700;
+}
+
+.country-name {
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.search-box {
+  border: 2px solid rgb(36, 81, 153);
+  border-radius: 5px;
+}
+
+.icon {
+  height: 1.5rem;
+  filter: invert(1) grayscale(100%);
+}
+
+.note {
+  font-weight: 300;
+}
+
+.d-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-cont-space-between {
+  justify-content: space-between;
+}
+
+.country-details div:nth-child(2n+1) {
+  background-color: rgb(72, 106, 165);
+}
+
+.country-details p:nth-child(even) {
+  background-color: rgb(55, 98, 165);
+}
+
+.det {
+  padding: 1rem 0.3rem;
+  margin: 0;
+  text-align: justify;
+  padding-left: 0.4rem;
+}
+
+.flag-top {
+  /* height: 90%; */
+  width: 30%;
+}
